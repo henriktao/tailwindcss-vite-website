@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <nav class="relative container mx-auto p-6">
+    <div class="flex items-center justify-between">
+      <!--
+      <div class="pt-2">
+        <img src="../img/logo.svg" alt="">
+      </div>
+      -->
+      <div class="pt-2">
+        <h1 class="text-2xl font-bold">
+          Portfolio
+        </h1>
+      </div>
+
+      <!-- Work -->
+      <div class="hidden md:flex space-x-4 md:space-x-2 lg:space-x-6">
+        <a href="#home" class="hover:text-red-700">Home</a>
+        <a href="#aboutMe" class="hover:text-red-700">About me</a>
+        <a href="#experience" class="hover:text-red-700">Experience</a>
+        <a href="#resume" class="hover:text-red-700">Resume</a>
+        <a href="#references" class="hover:text-red-700">References</a>
+        <a href="" class="hover:text-red-700">Contact</a>
+      </div>
+      <!-- Personal -->
+      <div class="hidden md:flex space-x-4 border-l-2 border-red-300 md:space-x-2">
+        <a href="" class="hover:text-red-700 ml-3">Blog</a>
+        <a href="" class="hover:text-red-700">Book Club</a>
+      </div>
+
+      <!--
+      <a href="" class="hidden md:block p-3 px-6 pt-2 text-white bg-red-600 rounded-full baseline hover:bg-red-400">
+        Get Started
+      </a>
+      -->
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="#">Home</a>
+        <a href="#">About me</a>
+        <a href="#">Experience</a>
+        <a href="#">Resume</a>
+        <a href="#">References</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-black">
+    <!-- Flex Container -->
+    <div
+      class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0 lg:space-x-0">
+      <!-- Left Item -->
+      <div class="flex flex-col mb-32 space-y-6 md:w-1/2 md:mt-14 lg:ml-28">
+        <h1 class="max-w-sm text-4xl font-bold text-center text-white md:text-6xl md:text-left">
+          Henrik Tao
+        </h1>
+        <p class="max-w-sm text-center text-white md:text-left">
+          This space is for me to introduce myself and let you explore who I am both professionally and personally.
+        </p>
+      </div>
+      <!-- Image -->
+      <div class="md:w-1/2">
+        <img src="../img/illustration-intro.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="aboutMe">
+    <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+      <!-- About Me -->
+      <div class="flex flex-col space-y-6 md:w-1/2 lg:ml-28">
+        <h2 class="max-w-sm text-4xl font-bold text-center md:text-left">
+          About me
+        </h2>
+        <p class="max-w-sm text-center text-stone-500 md:text-left">
+          Born and raised in Helsingborg, a city in the southern part of Sweden.
+        </p>
+      </div>
+      <div class="flex flex-col space-y-8 md:w-1/2">
+
+        <!-- List item 1-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <div class="rounded-l-full bg-red-200 md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-red-500">
+                01
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                Perseverance
+              </h3>
+            </div>
+          </div>
+          <div class="flex flex-col md:space-y-1">
+            <h3 class="hidden mb-4 text-lg font-bold md:block">
+              Perseverance
+            </h3>
+            <p class="text-stone-500">
+              In my opinion, my number one quality is perserverance.
+            </p>
+          </div>
+        </div>
+        <!-- List item 2-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <div class="rounded-l-full bg-red-200 md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-red-500">
+                02
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                Team player
+              </h3>
+            </div>
+          </div>
+          <div class="flex flex-col md:space-y-1">
+            <h3 class="hidden mb-4 text-lg font-bold md:block">
+              Team player
+            </h3>
+            <p class="text-stone-500">
+              In my opinion, my number one quality is perserverance. With perseverance during difficult times
+            </p>
+          </div>
+        </div>
+        <!-- List item 3-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <!-- Heading -->
+          <div class="rounded-l-full bg-red-200 md:bg-transparent">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-red-500">
+                03
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                Eager to learn
+              </h3>
+            </div>
+          </div>
+          <div class="flex flex-col md:space-y-1">
+            <h3 class="hidden mb-4 text-lg font-bold md:block">
+              Eager to learn
+            </h3>
+            <p class="text-stone-500">
+              In my opinion, my number one quality is perserverance. With perseverance during difficult times
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+
+
+  </section>
+
+  <section id="resume">
+    <div class="flex flex-col">
+      <h2 class="text-3xl font-bold text-center mt-32">Resumé</h2>
+      <iframe src="../img/Resume_HenrikTao_2022.pdf" class="display:block mt-5 mx-auto"
+        style="width:600px; height:900px;"></iframe>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section id="references">
+    <!-- Container -->
+    <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+      <h2 class="text-3xl font-bold text-center">
+        What do former classmates and managers think about me?
+      </h2>
+      <!-- Testimonials container-->
+      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+        <!-- Testi 1 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-stone-100 md:w-1/3">
+          <img src="../img/avatar-ali.png" class="w-14 -mt-14" alt="">
+          <h5 class="text-lg font-bold"> Ali </h5>
+          <p class="text-center text-sm text-stone-600">
+            A dependent and very knowledgable classmate
+          </p>
+        </div>
+        <!-- Testi 2 -->
+        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-stone-100 md:flex md:w-1/3">
+          <img src="../img/avatar-ali.png" class="w-14 -mt-14" alt="">
+          <h5 class="text-lg font-bold"> Henrik </h5>
+          <p class="text-center text-sm text-stone-600">
+            A dependent and very knowledgable classmate
+          </p>
+        </div>
+        <!-- Testi 3 -->
+        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-stone-100 md:flex md:w-1/3">
+          <img src="../img/avatar-ali.png" class="w-14 -mt-14" alt="">
+          <h5 class="text-lg font-bold"> Stefan </h5>
+          <p class="text-center text-sm text-stone-600">
+            A dependent and very knowledgable classmate
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="bg-red-400">
+    <div
+      class="container flex flex-col items-center justify-between mt-24 px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+      <h2 class="text-3xl font-bold leading-tight text-center text-white md:text-2xl md:max-w-xl md:text-left">
+        Let's connect!
+      </h2>
+      <div>
+        <a href=""
+          class="p-3 px-6 pt-3 text-red-400 font-bold bg-white rounded-full shadow-4xl baseline hover:bg-red-200">
+          Connect
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="bg-gray-800">
+    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and social links -->
+      <div class="flex flex-col-reverse items-center justify-between space-y-8 md:flex-col md:space-y-0 md:items-start">
+        <div class="mx-auto my-6 text-center text-white md:hidden">
+          Copyright &copy; 2022, All Rights Reserved
+        </div>
+        <div>
+          <img src="../img/logo-white.svg" class="h-8" alt="">
+        </div>
+        <div class="flex pb-6 justify-center space-x-4 md:pt-6">
+          <a href="https://www.linkedin.com/in/henriktao/" target="_blank">
+            <img src="../img/linkedin.png" alt="" width="39px">
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-around space-x-16">
+        <div class="flex flex-col space-y-3 text-white">
+          <a href="" class="hover:text-red-200">Home</a>
+          <a href="" class="hover:text-red-200">About me</a>
+          <a href="" class="hover:text-red-200">Experience</a>
+        </div>
+        <div class="flex flex-col space-y-3 text-white">
+          <a href="" class="hover:text-red-200">Resume</a>
+          <a href="" class="hover:text-red-200">References</a>
+          <a href="" class="hover:text-red-200">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
